@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Hamilton</title>
+</head>
+<body>
+    <form action="/enviarURL" method="post">
+        <fieldset class="main">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" required><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="telefono" id="telefono" required><br><br>
+
+            <label for="email">e-mail:</label><br>
+            <input type="email" id="email" required><br><br>
+
+            <label for="noches">Número de noches:</label><br>
+            <input type="number" id="noches" required><br><br>
+        </fieldset>
+        <fieldset class="fecha">
+            <label for="fechaEntrada">Fecha de entrada:</label><br>
+            <input type="date" id="fechaEntrada" required><br><br>
+
+            <label for="fechaSalida">Fecha de salida:</label><br>
+            <input type="date" id="fechaSalida" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <p>Elige tu habitación:</p>
+            <input type="radio" id="simple" name="tipo" value="simple">
+            <label for="simple">Simple</label><br>
+
+            <input type="radio" id="doble" name="tipo" value="doble">
+            <label for="doble">Doble</label><br>
+
+            <input type="radio" id="matrimonio" name="tipo" value="matrimonio">
+            <label for="matrimonio">Matrimonio</label><br>
+        </fieldset>
+        <fieldset>
+            <p>Extras:</p>
+            <input type="checkbox" id="desayuno" value="desayuno">
+            <label for="desayuno">Desayuno</label><br>
+
+            <input type="checkbox" id="comida" value="comida">
+            <label for="comida">Comida</label><br>
+
+            <input type="checkbox" id="cena" value="cena">
+            <label for="cena">Cena</label><br>
+
+            <input type="checkbox" id="cama supletoria" value="cama supletoria">
+            <label for="cama supletoria">Cama supletoria</label><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+
+</body>
+</html>
